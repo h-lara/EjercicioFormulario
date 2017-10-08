@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hernanlara.coursera.curso.com.ejercicioformulario.Detalle_contacto">
+
+    <TextView
+        android:id="@+id/tvTituloDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_detalle"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+         />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icons8_contacts_64"
+        tools:ignore="ContentDescription"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/tvNombre"
+        android:layout_toLeftOf="@+id/tvTituloDetalle"
+        android:layout_toStartOf="@+id/tvTituloDetalle" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/tvTituloDetalle"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="Fecha de nacimiento"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/tvTituloDetalle"
+        android:layout_alignStart="@+id/tvTituloDetalle" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNacimiento"
+        android:layout_alignStart="@+id/tvNacimiento"
+        android:layout_below="@+id/tvNacimiento"
+        android:text="Telefono" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTelefono"
+        android:layout_alignStart="@+id/tvTelefono"
+        android:layout_below="@+id/tvTelefono"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEmail"
+        android:layout_alignStart="@+id/tvEmail"
+        android:layout_below="@+id/tvEmail"
+        android:text="Descripción" />
+
+    <Button
+        android:id="@+id/btEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bt_botoneditar"
+        android:onClick="botonEditar"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicio Formulario</string>
+    <string name="et_nombre">Nombre Completo</string>
+    <string name="et_nacimiento">Fecha de nacimiento</string>
+    <string name="et_telefono">Ingrese teléfono</string>
+    <string name="et_email">Ingrese email</string>
+    <string name="et_descripcion">Ingrese una descripción del contacto</string>
+    <string name="bt_boton">Siguiente</string>
+    <string name="titulo_detalle">Confirmar datos</string>
+    <string name="bt_botoneditar">Editar datos</string>
+</resources>
